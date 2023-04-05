@@ -6,9 +6,11 @@ import {styles} from './style';
 import logo from '../../assets/logo.png';
 import EditPerfil from './EditarPerfil';
 import cadUser from '../cadUser/index';
+import Home from '../Inicio/index';
 export default function User({ navigation }) {
   return (
     <View style={styles.container}>
+            <View style={{ backgroundColor: '#fff' }}><Text>{'\n'}</Text></View>
       <SafeAreaView>
         <View style={styles.containerSearch}>
         <TouchableOpacity onPress={()=> navigation.navigate(Home)}><Image source={logo} style={styles.logo}/></TouchableOpacity>

@@ -1,7 +1,7 @@
-import {Text, View, Modal, TouchableOpacity, SafeAreaView, FlatList,TextInput, Alert, ScrollView, Image, Pressable, Details } from 'react-native';
+import {Text, View, Modal, TouchableOpacity, SafeAreaView, FlatList,TextInput, Alert, ScrollView, Image, Pressable, Details, Search } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import React, { useState} from 'react';
-import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome5, MaterialIcons } from '@expo/vector-icons';
 import logo from '../../assets/logo.png';
 import { AntDesign } from '@expo/vector-icons';
 import {styles} from './style';
@@ -16,11 +16,12 @@ export default function Pesquisa() {
   const [page, setPage] = useState(1);
   const [totalItems, setTotalItems] = useState(0);
   const [onEndReachedCalledDuringMomentum, setMT] = useState(true);
+
   return (
     <View style={styles.container}>
       <View style={{ backgroundColor: '#fff' }}><Text>{'\n'}</Text></View>
       <SafeAreaView>
-        <View style={styles.containerSearch}>
+          <View style={styles.containerSearch}>
           <Image
            source={logo} 
            style={styles.logo}/>
@@ -28,6 +29,7 @@ export default function Pesquisa() {
           <Text style={styles.textlogo}>Bibiotec{'\n'}   BIT</Text>
           
           <TextInput 
+          type='search'
           style={styles.pesquisa} 
           placeholder='Pesquisa'
           onChangeText={(busca) => setBusca(busca)}
@@ -240,7 +242,8 @@ export default function Pesquisa() {
               <AntDesign name="filter" color={'#FFF'} size={17} />
             </Text>
           </TouchableOpacity>
-            <Text>Suspense</Text>
+          
+            <Text>Romance</Text>
           <View style={styles.containerResult}>
             <ScrollView horizontal>
             <View style={styles.livroResult}>
@@ -248,145 +251,82 @@ export default function Pesquisa() {
             <Text style={styles.titulo}>A Biblioteca da Meia-Noite - Matt Haig</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/AVidaInvisivelDeAddieLaRue.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>A vida invisível de Addie LaRue - V. E. Schwab</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/Eu_meu_coracao.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Eu e Esse Meu Coração - C. C. Hunter</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/Pilares.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Os Pilares da Terra - Ken Follett</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/Ruina_ascensao.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Ruína e ascensão: Volume 3 da Trilogia Sombra e ossos - Leigh Bardugo</Text>
             </View>
             </ScrollView>
           </View>
+
           <Text>Suspense</Text>
           <View style={styles.containerResult}>
             <ScrollView horizontal>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>A Biblioteca da Meia-Noite - Matt Haig</Text>
+            <Image source={require('../../assets/Livros/APacienteSilenciosa.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>A paciente silenciosa - Alex Michaelides</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/Verity.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Verity - Colleen Hiiver</Text>
             </View>
             </ScrollView>
           </View>
-          <Text>Suspense</Text>
+
+          <Text>Autoajuda</Text>
           <View style={styles.containerResult}>
             <ScrollView horizontal>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>A Biblioteca da Meia-Noite - Matt Haig</Text>
+            <Image source={require('../../assets/Livros/AsCoisasQueVoceSoVeQuandoDesacelera.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>As Coisas Que Você Só Vê Quando Desacelera - Haemin Sunim </Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/DiarioDeUmaAnsiosa.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Diário de uma ansiosa ou como parei de me sabotar: - Beth Evans</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/Dominio.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Domínio: O cristianismo e a criação da mentalidade ocidental -  Tom Holland</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/mindset.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Mindset: A Nova Psicologia do Sucesso - Carol Dweck</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/MulheresQueCorremComOsLobos.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Mulheres Que Correm Com Os Lobos - Clarissa Pinkola Estés</Text>
             </View>
             </ScrollView>
           </View>
-          <Text>Suspense</Text>
+
+          <Text>Ficcção</Text>
           <View style={styles.containerResult}>
-            <ScrollView horizontal>
+            <ScrollView horizontal >
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>A Biblioteca da Meia-Noite - Matt Haig</Text>
+            <Image source={require('../../assets/Livros/Batalha_Apoc.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>A Batalha do Apocalipse - Eduardo Sphonr</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/ContosDeFadasDosIrmãosGrimm.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Contos de fadas dos irmãos Grimm - Wilhelm Grimm</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/neuromancer.jpg')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Neuromancer - William Gibson</Text>
             </View>
             <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            </ScrollView>
-          </View>
-          <Text>Suspense</Text>
-          <View style={styles.containerResult}>
-            <ScrollView horizontal>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>A Biblioteca da Meia-Noite - Matt Haig</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            </ScrollView>
-          </View>
-          <Text>Suspense</Text>
-          <View style={styles.containerResult}>
-            <ScrollView horizontal>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>A Biblioteca da Meia-Noite - Matt Haig</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
-            </View>
-            <View style={styles.livroResult}>
-            <Image source={require('../../assets/Livros/ABibliotecaDaMeiaNoite.jpg')} style={styles.livro}/> 
-            <Text style={styles.titulo}>asdasd</Text>
+            <Image source={require('../../assets/Livros/Star_Wars.png')} style={styles.livro}/> 
+            <Text style={styles.titulo}>Star Wars: Herdeiro do Império - Timothy Zahn</Text>
             </View>
             </ScrollView>
           </View>

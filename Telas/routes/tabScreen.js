@@ -22,7 +22,6 @@ import { Feather } from '@expo/vector-icons';
 import config from '../Opcoes/index';
 import pesquisa from '../Pesquisa/index';
 import Home from '../Inicio/index'
-
 const Tab = createBottomTabNavigator();
 export default function HomeTabs({navigation}) {
   return (

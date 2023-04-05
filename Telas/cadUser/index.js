@@ -79,6 +79,7 @@ export default function Cadastro({ navigation }) {
 
   return (
     <View style={styles.container} >
+      <View style={{ backgroundColor: '#fff' }}><Text>{'\n'}</Text></View>
       <SafeAreaView>
         <View style={styles.containerSearch}>
           <TouchableOpacity onPress={() => navigation.navigate(Home)}><Image source={logo} style={styles.logo} /></TouchableOpacity>

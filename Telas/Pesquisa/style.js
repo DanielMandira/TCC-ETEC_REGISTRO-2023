@@ -96,7 +96,7 @@ export const styles = StyleSheet.create({
     },
     livroResult:{
       flexDirection:'column',
-      width:120
+      width:120,
     }
   },
   );
