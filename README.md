@@ -5,9 +5,6 @@ App Mobile desenvolvido em React Native para gerenciamento e catálogo digital d
 ##Sobre o Projeto
  O sistema foi desenvolvido com o intuito de permitir que o usuário tenha acesso a um catálogo com todos os livros disponíveis em sua instituição, além de poder realizar empréstimos e agendamentos de retirada com maior facilidade. O perfil do usuário conta com um sistema de livros favoritados, histórico de empréstimos e agendamentos, bem como uma biografia customizável.
 
-## Demonstração
-https://drive.google.com/file/d/1XEo1GbJ54Ch4SWRcTFpmG7OweLdpXKhb/view?usp=sharing
-
 ## Screenshots
 ![Tela Inicial](https://github.com/DanielMandira/appBibliotec/assets/105872910/f47196ce-9b7b-487e-985b-aad31f455584)
 ![Perfil do Usuario](https://github.com/DanielMandira/appBibliotec/assets/105872910/7acd0bbd-bd18-4235-9797-a394db2224e0)
