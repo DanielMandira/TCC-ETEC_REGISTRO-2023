@@ -1,0 +1,15 @@
+  public DataTable CadLivro()
+        {
+           
+            this.abrirConexao();
+            string mSQLLivro = "insert into livro(titulo_livro,isbn_10,dimensao_livro,autor_livro,sinopse_livro,sobre_autor,editora_livro,numero_paginas,data_publicacao,idioma_livro,imagem_livro) VALUES ('" + get_titulo() + "','" + get_isbn() + "','" + get_dimensaoLivro() + "','"+get_autor()+"','"+get_sinopse()+"','" + get_sobreAutor() + "','" + get_editora() + "','" + get_numeroPaginas() + "', DATE_FORMAT('" + get_dataPublicacao() + "','%Y/%M/%d')','" + get_idiomaLivro() + "','" + get_capaLivro() + "')";
+
+            MySqlCommand cmd = new MySqlCommand (mSQLLivro , conectar);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            this.fecharConexao();
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+           }

@@ -1,0 +1,548 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center
+    
+    
+}
+header .divVoltar{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 0 0;
+}
+header .divVoltar img{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* label{ 
+    font-size: 28px;
+    font-family: 'Roboto Condensed', sans-serif;  
+}
+
+label input[type="checkbox"]{
+    display:none;
+}
+
+
+
+.custom-checkbox{
+    margin-left: 30%;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox .glyphicon{
+    color:crimson;
+    position: absolute;
+    top: -0.2em;
+    left: 110%;
+    font-size: 1.75em;
+}
+
+.custom-checkbox .glyphicon-heart-empty{
+    color:gray;
+}
+
+.custom-checkbox .glyphicon-heart{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.custom-checkbox:hover.glyphicon-heart{
+    opacity: 0.5;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .glyphicon-heart{
+    opacity: 1;
+}
+
+*/
+
+.main{    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+
+}
+
+main .divEmprestimo{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #e6e6e6;
+    width: 28%;
+    flex-wrap: wrap;
+    margin: 1% ;
+    box-shadow: 5px 5px 15px #61606098;
+    padding: 20px;
+}
+.divEmprestimo .infoLivro{
+    
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    word-break: break-all;
+width: 18%;}
+
+
+.divEmprestimo .img1{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    height: 100%;
+}
+.divEmprestimo .img1 img{
+    width: 140px;
+    height: 180px;
+}
+
+
+
+.divEmprestimo .nomeLivro{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2px;
+    word-break: break-all;
+}
+
+.divEmprestimo h3{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2px;
+    word-break: break-all;
+}
+
+h3{
+    display: inline-block;
+    width: 100%;
+    word-break: break-all;
+}
+
+ .divFav{
+    width: 50%;
+    float: left;
+    align-content:flex-end;
+}
+
+.divFav img{
+    cursor: pointer;
+    width: 40px;
+    margin-right: 9px;
+    float: right;
+    align-content: flex-end;
+    
+    
+}
+
+.divFav label{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 15%;
+    font-size: 30px;
+    
+    vertical-align: top;
+}
+
+.divEmprestimo h3{
+    font-size: 18px;
+    }
+
+    
+.divEmprestimo h2{
+    font-size: 25px;
+    }
+
+.divEmprestimo .infoPt1{
+width: 40%;
+float: left;
+}
+
+.divEmprestimo .infoPt1 .nomeAutor{
+    width: 50%;
+}
+
+.divEmprestimo .infoPt1 .editoraLivro{
+    width: 30%;
+}
+
+.divEmprestimo .infoPt1 .numPaginas{
+    width: 50%;
+}
+
+.divEmprestimo .infoPt1 .idioma{
+    width: 50%;
+}
+
+.divEmprestimo .infoPt2{
+    width: 50%;
+    float:left;
+    }
+    
+
+.divEmprestimo .infoPt2 .dataPubli{
+    width: 50%;
+}
+
+.divEmprestimo .infoPt2 .dimensoesLivro{
+    width: 50%;
+}
+
+.divEmprestimo .infoPt2 .isbn10{
+    width: 50%;
+}
+
+.divEmprestimo .agendamento {
+    padding-top: 20%;
+    width: 30%;
+    vertical-align: bottom;
+
+}
+
+.divEmprestimo .divbotaoAluga{
+    display: flex;
+    margin-top: 20px;
+}
+.divEmprestimo .divbotaoAluga .botaoAluga{
+    background-color: #73b83e;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px #55a716a1;
+
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 1s;
+}
+.divEmprestimo .divbotaoAluga .botaoAluga:hover{
+    background-color: #68aa36;
+    box-shadow: 4px 4px 8px #1e3d06a1;
+}
+
+.divEmprestimo .divbotaoAgendado{
+    display: flex;
+    margin-top: 20px;
+}
+.divEmprestimo .divbotaoAgendado .botaoAgendado{
+    background-color: #3ea2b8;
+    width: 140px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px #1683a7a1;
+
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 1s;
+}
+.divEmprestimo .divbotaoAgendado .botaoAgendado:hover{
+    background-color: #358ca0;
+    box-shadow: 4px 4px 8px #074149a1;
+}
+
+.divEmprestimo .divbotaoDevolucao{
+    display: flex;
+    margin-top: 20px;
+}
+.divEmprestimo .divbotaoDevolucao .botaoDevolucao{
+    background-color: #783560;
+    width: 140px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px #524f51;
+
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 1s;
+}
+.divEmprestimo .divbotaoDevolucao .botaoDevolucao:hover{
+    background-color: #612e4f;
+    box-shadow: 4px 4px 8px #4b484a;
+}
+
+.divResumo .txttituloResumo{
+    margin-top:20px ;
+    display: flex;
+    justify-content: center;
+}
+.divResumo{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.divResumo .txtsinopse{
+    margin-top: 20px ;
+    color: #4b4b4b;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+.divResumo h1{
+    font-size: 2em;
+}
+
+.divResumo .txtsinopse #mais{
+    display: none;
+}
+.divResumo .divbtn_lerMais{
+    margin-top: 20px ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.divbtn_lerMais .btn_lerMais{
+    width: 190px;
+    height: 40px;
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+    border: none;
+
+    background-color: #783560;
+    color: white;
+    box-shadow: 3px 3px 5px #524f51;
+    cursor: pointer;
+    transition: 0.5s;
+
+    font-size: 14px;
+}
+.btn_lerMais:hover{
+    background-color: #612e4f;
+    box-shadow: 4px 4px 6px #4b484a;
+    }
+
+    div .users_coment{
+        background-color: #e6e6e6;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 930px;
+        margin: 0 auto;
+        box-shadow: 4px 4px 15px rgb(201, 201, 201);
+        border-radius: 2px;
+    }
+
+    div .criar_coment{
+        background-color: #e6e6e6;
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        max-width: 930px;
+        margin: 0 auto;
+        box-shadow: 4px 4px 15px rgb(201, 201, 201);
+        border-radius: 2px;
+    }
+    div .criar_coment .info_coment{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .criar_coment .area_coment {
+
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        
+       
+    
+    }
+
+    .btn_comment{
+        display: flex;
+        justify-content: center;
+        width:100%;
+    }
+
+    form{
+        width: 100%;
+    }
+    .btn_comment input{
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+        background-color: #38B588;
+        box-shadow: 4px 4px 15px #5ccba3;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .btn_comment input:hover{
+        background-color:#209167 ;
+        box-shadow: 4px 4px 15px #52c098;
+    }
+    .criar_coment .area_coment textarea{
+        
+        width: 100%;
+        height: 200px;
+        outline: none;
+        resize: none;
+        font-size:26px;
+        margin-top:-3px;
+        border-radius: 5px;
+
+       
+    
+    }
+
+
+
+    .criar_coment .comentariosug{
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        height: 50%;
+        font-size: 28px;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        color: white;
+        
+    background-color: #783560;
+}
+
+    
+    .users_coment .img_user{
+        display: flex;
+        justify-content: start;
+        width: 23%;
+        margin: 0 auto;
+    }
+    div .users_coment .info_user{
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+    
+    }
+
+   
+    div .users_coment .nome_user{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 50%;
+        margin: 0 auto;
+        
+    }
+
+    
+    div .users_coment .nome_user p{
+        width: 50%;
+        height: 100%;
+        margin: 5px ;
+        font-size: 28px;
+       margin-top: 50px;
+       padding-left: 0px;
+    }
+    
+    div .users_coment .curso_user{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    div .users_coment .curso_user p{
+        width: 100%;
+        height: 100%;
+        margin:5px;
+        font-size: 22px;
+    }
+    
+    
+ .coment_user{
+        display: flex;
+        justify-content: end;
+        vertical-align: bottom;
+        width: 100%;
+        float: left;
+    }
+    .users_coment .coment_user p{
+        display: flex;
+        width: 77%;
+        padding-right: 30px;
+        padding-left: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    color: #202124;
+       
+      
+    }
+    .users_coment .btn_comment{
+        display: flex;
+        justify-content: end;
+        width:95%;
+    }
+    .users_coment .btn_comment input{
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        background-color: #38B588;
+        box-shadow: 4px 4px 15px #5ccba3;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .btn_comment input:hover{
+        background-color:#209167 ;
+        box-shadow: 4px 4px 15px #52c098;
+    }
+
+
+@media (max-width: 430px)
+{
+    .divEmprestimo .img1 img{
+        width: 62%;
+        height: 59%;
+
+    }
+  
+}
+

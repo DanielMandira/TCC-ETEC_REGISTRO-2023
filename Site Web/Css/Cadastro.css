@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    
+    height: 100vh;
+    
+}
+.part1
+{
+    
+    background-color: #783560;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+.nomePag h4
+{
+    margin: 2px;
+    font-size: 0.8em;
+
+}
+.nomePag h2
+{
+    font-family: 'Roboto Condensed', sans-serif;
+   text-align: center;
+    font-size:50px;
+    margin-top: 8%;
+    margin-bottom: 2%;
+   margin-bottom:5em ;
+
+}
+.nomePag p
+{
+    text-align: center;
+    font-size: 40px;
+}
+.forms *
+{
+  margin-bottom: 1vh;
+}
+.forms
+{
+    font-size: 35px;
+    margin-top: 10vh;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;  
+}
+div .formflex
+{
+    display: flex;
+    max-width: 75%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div .form-group
+{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+.form-group input
+{
+    width: 65%;
+    font-family: 'Varela Round', sans-serif;
+    box-shadow: 0 0 0 0;
+    border-top: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+    transition: border-color 0.09s ease-out 100ms;
+}
+.custom_select
+{
+    
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+}
+.custom_select select{
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    box-shadow: 0px 0 0 0;
+
+    border-top: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+    transition: border-color 0.09s ease-out 100ms;
+}
+.form-group input:hover
+{
+    border-color: #0f0f0f;;
+}
+.btn
+{
+    width: 100px;
+    height: 30px;
+    border: 0 none;
+    box-shadow: 4px 3px 2px #524f51;
+    border-radius: 15px;
+    background-color: #783560;
+    color: white;
+    font-family: 'Varela Round', sans-serif; 
+    transition: 0.5s ease-out 100ms 
+}
+.btn:hover
+{
+    background-color: #612e4f;
+}
+
+.txtoutraescolha
+{
+    margin-top: 5vh;
+    font-size: 20px;
+}
+#face{
+    color: #395599;
+    transition: 0.3s ease-out 100ms 
+}
+#google{
+    color: #E34033;
+    transition: 0.3s ease-out 100ms 
+}
+
+#face:hover{
+    color: #2c53b6;
+    font-size: 50px;
+}
+#google:hover{
+    
+    font-size: 50px;
+    color: #f01d0e;
+}
+    @media (max-width: 1241px)
+    {
+    
+        .header
+        {
+            display: grid;
+            grid-template-columns: 100% ;
+            grid-auto-rows: 100%;
+        }
+        .nomePag h2
+        {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: center;
+            font-size:50px;
+            margin-top: 2%;
+            margin-bottom:5em ;
+        } 
+        .part1
+        {
+            width: 100%;
+            height: 100%;
+            grid-column-start: 1;
+            grid-column-end:3 ;
+        }
+        .forms
+        {
+            width: 100%;
+            height: 100%;
+            text-align: center; 
+            grid-column-start: 1;
+            grid-column-end:3 ; 
+        }
+    }

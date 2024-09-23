@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #202124;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+header{
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-bottom: 1px solid #cbcbcb;
+}
+.headerDiv{
+    
+    
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1300px;
+    
+}
+
+
+.headerDiv .Logo .nomeSite{
+    vertical-align: super;
+    height: 200px;
+}
+header .Menu{
+    display: flex;
+    align-items: center;
+    
+}
+
+header li a{
+   color: rgb(9, 9, 9);
+    margin-left: 20px;
+}
+
+
+
+
+main{
+    margin-top: 10px;
+    
+}
+main .slider{
+margin: 0 auto;
+width: 930px;
+height: 400px;
+max-width: 100%;
+overflow: hidden;
+}
+main .slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+
+}
+.slider input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 930px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 930px;
+    margin-top: -40px ;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border:2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child)
+{
+    margin-right:40px ;
+}
+.manual-btn:hover
+{
+    background-color: rgb(78, 78, 78);
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -25%;
+}
+#radio3:checked ~.first{
+    margin-left: -50%;
+}
+#radio4:checked ~.first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius:  10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 930px;
+    margin-top:360px ;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1
+{
+    background-color: rgb(6, 6, 6);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2
+{
+    background-color: rgb(6, 6, 6);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3
+{
+    background-color: rgb(6, 6, 6);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4
+{
+    background-color: rgb(6, 6, 6);
+}
+
+
+.prateleira_text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 ;
+    max-width:930px;
+}
+.prateleira_text p{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+ .prateleira_livros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fcfcfc;
+    width: 100%;
+    margin:0 auto;
+    max-width:930px;
+}
+.prateleira_livros .fundolivros{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+    height: 180px;
+}
+.fundolivros .l1{
+    
+    display: flex;
+}
+
+
+div .txtl1
+{
+    display: inline;
+    margin-left: 10px;
+    width: 160px;
+    
+}
+div .txtl11
+{
+display: flex;
+height: 50%;
+    
+}
+
+div .txtl12
+{
+    display: flex;
+    height: 50%;
+    align-items: flex-end;
+}
+
+
+
+
+.fundolivros .l2{
+   
+    display: flex;
+}
+div .txtl2
+{
+    display: inline;
+    margin-left: 10px;
+    width: 160px;
+    
+}
+div .txtl21
+{
+display: flex;
+height: 50%;
+    
+}
+div .txtl22
+{
+    display: flex;
+    height: 50%;
+    align-items: flex-end;
+}
+
+
+
+.fundolivros .l3{
+    
+    display: flex;
+}
+div .txtl3
+{
+    display: inline;
+    margin-left: 10px;
+    width: 160px;
+    
+}
+div .txtl31
+{
+display: flex;
+height: 50%;
+    
+}
+div .txtl32
+{
+    display: flex;
+    height: 50%;
+    align-items: flex-end;
+}
+
+div .divtxt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+div .divtxt p{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    margin: 30px 0px 20px;
+
+}
+div .divbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+div .divbtn input{
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    background-color:#783560;
+    box-shadow: 4px 4px 6px #524f51;
+    border: none ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+div .divbtn input:hover{
+background-color: #612e4f;
+box-shadow: 4px 4px 6px #4b484a;
+}
+
+
+section .sctcomt{
+
+    display: flex;
+
+    max-width: 930px;
+
+}
+
+div .comentarios_fixos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+.comentarios_fixos .box-1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    border: 0px solid rgba(189, 171, 171, 0.421);
+    box-shadow: 5px 5px 21px #00000054;
+    background-color: #ffffff;
+ 
+}
+.comentarios_fixos .box-1 p{
+    line-height: 25px;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    font-size: 18px;
+}
+.comentarios_fixos .box-2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+.comentarios_fixos .box-2 p{
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    
+}
+
+div .users_coment{
+    background-color: #e6e6e6;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    box-shadow: 4px 4px 15px rgb(201, 201, 201);
+    border-radius: 2px;
+}
+.users_coment .img_user{
+    display: flex;
+    justify-content: start;
+    width: 23%;
+    margin: 0 auto;
+}
+div .users_coment .info_user{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+div .users_coment .nome_user{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+div .users_coment .nome_user p{
+    width: 100%;
+    height: 100%;
+    margin: 5px ;
+    font-size: 22px;
+}
+
+div .users_coment .curso_user{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+div .users_coment .curso_user p{
+    width: 100%;
+    height: 100%;
+    margin:5px;
+    font-size: 22px;
+}
+
+
+.users_coment .coment_user{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+.users_coment .coment_user p{
+    display: flex;
+    width: 77%;
+   
+  
+}
+.users_coment .btn_comment{
+    display: flex;
+    justify-content: end;
+    width:95%;
+}
+.users_coment .btn_comment input{
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    background-color: #38B588;
+    box-shadow: 4px 4px 15px #5ccba3;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn_comment input:hover{
+    background-color:#209167 ;
+    box-shadow: 4px 4px 15px #52c098;
+}
+
+footer{
+    background-color: #783560;
+}
+footer .fttxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    max-width: 930px;
+    margin: 0 auto;
+    font-size: 22px;
+}
+footer .fttxt p{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+@media (max-width: 450px)
+{
+.headerDiv{
+    display: flex;
+   justify-content: center;
+    height: 50vh;
+    padding: 0;
+}
+
+.headerDiv .Menu li a{
+    display: none;
+}
+
+
+.slider{
+    display: none;
+}
+.prateleira_livros{
+    display: none;
+}
+div .img_user{
+    display: 0;
+}
+}
+@media (max-width: 909px)
+{
+.slider{
+    display: none;
+}
+
+}

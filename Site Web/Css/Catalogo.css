@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+     padding: 0%;
+
+}
+
+#sectionGenero{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 20px;
+
+}
+#min{
+    border: #783560;
+    border: 1px solid;
+    border-color:rgba(0, 0, 0, 0.175);
+    border-radius: 30px;
+}
+
+.swiper-slide card{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.container{
+    position: relative;
+    height: 450px;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+}
+
+.swiper{
+    width: 100%;
+}
+
+section .card .image{
+    height: 280px;
+    width: 210px;
+padding:3px;
+background: #783560;
+}
+
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+section .card{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    width: 280px;
+
+}
+
+
+section .card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #783560;
+    border-radius: 20px 20px 0 0;
+
+}
+section .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    position: relative;
+    z-index: 100;
+
+}
+
+.card .disp-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .disp-icons img{
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+
+.card .disp-icons img:hover{
+    opacity: 1;
+
+}
+
+.card .nome-livro{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card .nome-livro .nome{
+
+    font-size: 20px;
+    font-weight: 650;
+}
+
+
+
+
+section .card-min{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    width: 480px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+
+}
+
+section .card-min .image{
+    height: 280px;
+    width: 210px;
+padding:3px;
+background: #783560;
+}
+
+section .card-min .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+
+
+
+section .card-min::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #783560;
+    border-radius: 20px 20px 0 0;
+
+}
+section .card-min .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    position: relative;
+    z-index: 100;
+   
+
+}
+
+.card-min .disp-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-min .disp-icons img{
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+
+.card-min .disp-icons img:hover{
+    opacity: 1;
+
+}
+
+.card-min .nome-livro{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-min .nome-livro .nome{
+
+    font-size: 20px;
+    font-weight: 650;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section .romanceimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+    
+}
+
+.texTLivrosGenero{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+.romanceimg  .texTLivrosGenero{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.romanceimg  .imgLivrosRomance{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+
+div .container{
+    position: relative;
+    margin: 0px 0px 0px -12px;
+    width: 0px;
+}
+.container:hover .legenda{
+    transition: 0.5s;
+    cursor:pointer;
+    border: 1px solid rgb(39, 64, 90);
+    background-color: rgba(255, 255, 255, 0.678);
+    visibility: visible;
+    color: rgb(47, 47, 47)
+}
+.legenda{
+    position: absolute;
+    margin: 0;
+    width: 100px;
+    height: 150px;
+    left: 12px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    color: white;
+    font-size: 22px;
+   
+}
+
+/* FIM Livros de Romance*/
+
+
+/* Livros de Terror*/
+section .terrorimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.terrorimg  .texTLivrosTerror{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.terrorimg  .imgLivrosTodosTerror{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+
+/* FIM Livros de Terror*/
+
+/* Livros de Suspense*/
+section .suspenseimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.suspenseimg  .texTLivrosSuspense{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.suspenseimg  .imgLivrosTodosSuspense{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+
+/* FIM Livros de Suspense**/
+
+/* Livros de HQ*/
+section .hqimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hqimg  .texTLivrosHQ{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.hqimg  .imgLivrosHQTodos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+
+/* FIM Livros de HQ**/
